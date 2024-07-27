@@ -10,6 +10,9 @@ li{
     background: gray;
     text-align: center;
 }
+.container{
+    max-width: 1500px;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -89,4 +92,16 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+.choice{
+
+}
+.choice__button{
+
+}
+.choice__content{
+
+}
+.choice__cart{
+
 }

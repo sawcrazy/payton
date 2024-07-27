@@ -27,9 +27,20 @@ export const App = () =>{
                         <li> язык</li>
                     </ul>
                 </nav>
-               
-
             </header>
+            <div className={s.container}>
+                <section className={s.choice}>
+                    <div className={s.choice__button}>
+
+                    </div>
+                    <div className={s.choice__content}>
+                        <div className={s.choice__cart}>
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
         </div>
     )
 }
