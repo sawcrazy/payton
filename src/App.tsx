@@ -6,8 +6,14 @@ import Icon_3 from './img/icon_3.svg';
 import FlagRu from './img/flag_ru.svg';
 import s from './style.module.css';
 import {Switch} from "./components/switch/switch";
+import {ButtonShow} from "./components/buttons/button";
+import {useState} from "react";
 
 export const App = () =>{
+    const [activeButton, setActiveButton] = useState(null);
+    const handleButtonClick = (buttonId) => {
+        setActiveButton(buttonId);
+    };
     return (
         <div className={s.main}>
             <header className={s.header}>
@@ -47,12 +53,18 @@ export const App = () =>{
             <div className={s.container}>
                 <section className={s.choice}>
                     <div className={s.choice__button}>
-                        <div>
-                            Курсы
-                        </div>
-                        <div>
-                            Моё обучение
-                        </div>
+                        <ButtonShow
+                            name="Курсы"
+                            id="1"
+                            active={activeButton === '1'}
+                            onClick={handleButtonClick}
+                        />
+                        <ButtonShow
+                            name="Моё обучение"
+                            id="2"
+                            active={activeButton === '2'}
+                            onClick={handleButtonClick}
+                        />
                     </div>
                     <div className={s.choice__content}>
                         <div className={s.choice__cart}>

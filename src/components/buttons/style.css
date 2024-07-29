@@ -1,0 +1,19 @@
+.button_show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px 12px 16px;
+    gap: 8px;
+    border-radius: 12px;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: rgba(185, 185, 185, 1);
+    background: rgba(23, 23, 23, 1);
+    width: 275px;
+}
+.active {
+    color: rgba(40, 112, 221, 1);
+    background: rgba(40, 112, 221, 0.16);
+}

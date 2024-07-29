@@ -139,6 +139,8 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .choice{
+    margin-top: 16px;
+    height: 100vh;
 
 
 }
@@ -155,8 +157,10 @@ input:checked + .slider:before {
     padding: 4px;
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 16px;
+
 }
 .choice__content{
+    margin-top: 16px;
 
 }
 .choice__cart{
