@@ -1,0 +1,36 @@
+.switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.switch.on {
+    background-color: #4caf50;
+}
+
+.switch-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.switch.on .switch-circle {
+    transform: translateX(30px);
+}
+
+.switch-circle span {
+    font-size: 14px;
+}

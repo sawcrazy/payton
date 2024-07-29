@@ -1,30 +1,46 @@
+import Percent from './img/percent.svg';
+import User from './img/user.svg';
+import Icon_1 from './img/icon_1.svg';
+import Icon_2 from './img/icon_2.svg';
+import Icon_3 from './img/icon_3.svg';
+import FlagRu from './img/flag_ru.svg';
 import s from './style.module.css';
+import {Switch} from "./components/switch/switch";
 
 export const App = () =>{
     return (
         <div className={s.main}>
             <header className={s.header}>
                 <div className={s.logo}>
-                    <span>
-                        All-in-one
-                    </span>
-                    <span>
-                        Study
-                    </span>
                 </div>
                 <nav className={s.menu}>
                     <ul>
-                        <li>Referral</li>
-                        <li> пользователь</li>
+                        <li className={s.menu_referral}>
+                            <div>Referral</div>
+                            <img src={Percent} alt=""/>
+                        </li>
+                        <li className={s.menu_user}>
+                            <img src={User} alt="user"/>
+                            <div>0x831...B49F</div>
+                            <img src={Icon_1} alt="icon"/>
+                        </li>
                         <li> 
                             <label className={s.switch}>
                                 <input type="checkbox"/>
                                 <span className={s.slider + ' ' + s.round}></span>
                             </label>
                         </li>
-                        <li> чат </li>
-                        <li> уведомления</li>
-                        <li> язык</li>
+                        <li> <Switch/> </li>
+                        <li className={s.menu_icon}>
+                            <img src={Icon_2} alt="icon"/>
+                        </li>
+                        <li className={s.menu_icon}>
+                            <img src={Icon_3} alt="icon"/>
+                        </li>
+                        <li className={s.menu_language}>
+                            <img src={FlagRu} alt="flag"/>
+                            <div>RU</div>
+                        </li>
                     </ul>
                 </nav>
             </header>
