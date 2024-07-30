@@ -4,6 +4,8 @@ import Icon_1 from './img/icon_1.svg';
 import Icon_2 from './img/icon_2.svg';
 import Icon_3 from './img/icon_3.svg';
 import FlagRu from './img/flag_ru.svg';
+import Payton from './img/payton.svg';
+import Js from './img/js.svg';
 import s from './style.module.css';
 import {Switch} from "./components/switch/switch";
 import {ButtonShow} from "./components/buttons/button";
@@ -31,13 +33,9 @@ export const App = () =>{
                             <div>0x831...B49F</div>
                             <img src={Icon_1} alt="icon"/>
                         </li>
-                        <li> 
-                            <label className={s.switch}>
-                                <input type="checkbox"/>
-                                <span className={s.slider + ' ' + s.round}></span>
-                            </label>
+                        <li className={s.menu_switch}>
+                            <Switch/>
                         </li>
-                        <li> <Switch/> </li>
                         <li className={s.menu_icon}>
                             <img src={Icon_2} alt="icon"/>
                         </li>
@@ -68,10 +66,22 @@ export const App = () =>{
                         />
                     </div>
                     <div className={s.choice__content}>
-                        <Cart/>
-                        <Cart/>
-                        <Cart/>
-                        <Cart/>
+                        <Cart
+                            img={Payton}
+                            cartName="Web3 Python-разработчик"
+                        />
+                        <Cart
+                            img={Js}
+                            cartName="Web3 JS-разработчик"
+                        />
+                        <Cart
+                            blur={true}
+
+                        />
+                        <Cart
+                            blur={true}
+
+                        />
                     </div>
                 </section>
             </div>

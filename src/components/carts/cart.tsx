@@ -1,11 +1,10 @@
 import Icon_4 from '../../img/icon_4.svg';
-import Payton from '../../img/payton.svg'
 import s from "./style.module.css";
 
 
-export const Cart = ()=>{
+export const Cart = (props)=>{
     return (
-        <div className={s.choice__cart}>
+        <div className={!props.blur ? `${s.choice__cart}` : `${s.choice__cart + ' ' + s.blur}`}>
             <div className={s.choice__cart_head}>
                 <div className={s.choice__cart_head_logo}>
                     <img src={Icon_4} alt="icon"/>
@@ -18,7 +17,7 @@ export const Cart = ()=>{
                 </div>
             </div>
             <div className={s.choice__cart_img} style={
-                {backgroundImage: `url(${Payton})`,
+                {backgroundImage: `url(${props.img})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
                     height:'178px',
@@ -28,7 +27,7 @@ export const Cart = ()=>{
 
             </div>
             <div className={s.choice__cart_name}>
-                Web3 Python-разработчик
+                {props.cartName}
             </div>
             <div className={s.choice__cart_footer}>
                 <div>

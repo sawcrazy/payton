@@ -1,36 +1,37 @@
 .switch {
     position: relative;
-    width: 60px;
-    height: 30px;
-    background-color: #333;
+    width: 55px;
+    height: 28px;
+    background-color: #fff;
     border-radius: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 2px;
 }
 
 .switch.on {
-    background-color: #4caf50;
+    background: rgba(42, 43, 46, 1);
+
 }
 
 .switch-circle {
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    background: rgba(40, 108, 224, 1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .switch.on .switch-circle {
-    transform: translateX(30px);
+    transform: translateX(27px);
 }
 
 .switch-circle span {
-    font-size: 14px;
+    font-size: 20px;
 }
