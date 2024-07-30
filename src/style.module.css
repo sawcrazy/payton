@@ -161,33 +161,7 @@ input:checked + .slider:before {
 }
 .choice__content{
     margin-top: 16px;
-
-}
-.choice__cart{
-    background: rgba(31, 32, 34, 1);
-    width: 384px;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 16px;
-    padding: 16px;
-
-
-}
-.choice__cart_head{
     display: flex;
-    justify-content: space-between;
-
-}
-.choice__cart_img{
-
-}
-.choice__cart_footer{
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.04);
-    width: 352px;
-    height: 64px;
-    padding: 12px;
     gap: 10px;
-    border-radius: 16px;
 
 }

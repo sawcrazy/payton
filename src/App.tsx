@@ -8,9 +8,10 @@ import s from './style.module.css';
 import {Switch} from "./components/switch/switch";
 import {ButtonShow} from "./components/buttons/button";
 import {useState} from "react";
+import {Cart} from "./components/carts/cart";
 
 export const App = () =>{
-    const [activeButton, setActiveButton] = useState(null);
+    const [activeButton, setActiveButton] = useState('1');
     const handleButtonClick = (buttonId) => {
         setActiveButton(buttonId);
     };
@@ -67,38 +68,10 @@ export const App = () =>{
                         />
                     </div>
                     <div className={s.choice__content}>
-                        <div className={s.choice__cart}>
-                            <div className={s.choice__cart_head}>
-                                <div>
-                                    Программирование
-                                </div>
-                                <div>
-                                    Для начинающих
-                                </div>
-                            </div>
-                            <div className={s.choice__cart_img}>
-
-                            </div>
-                            <div>
-                                Web3 Python-разработчик
-                            </div>
-                            <div className={s.choice__cart_footer}>
-                                <div>
-                                    Цена
-                                    500 USDT
-                                </div>
-                                <div>
-                                    Длительность
-                                    6 мес.
-                                </div>
-                                <div>
-                                    Начало
-                                    06 Июля, 2024
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <Cart/>
+                        <Cart/>
+                        <Cart/>
+                        <Cart/>
                     </div>
                 </section>
             </div>
