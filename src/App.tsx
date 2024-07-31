@@ -10,7 +10,7 @@ import s from './style.module.css';
 import {Switch} from "./components/switch/switch";
 import {ButtonShow} from "./components/buttons/button";
 import {useState} from "react";
-import {Cart} from "./components/carts/cart";
+import {Card} from "./components/cards/card";
 
 export const App = () =>{
     const [activeButton, setActiveButton] = useState('1');
@@ -66,19 +66,19 @@ export const App = () =>{
                         />
                     </div>
                     <div className={s.choice__content}>
-                        <Cart
+                        <Card
                             img={Payton}
                             cartName="Web3 Python-разработчик"
                         />
-                        <Cart
+                        <Card
                             img={Js}
                             cartName="Web3 JS-разработчик"
                         />
-                        <Cart
+                        <Card
                             blur={true}
 
                         />
-                        <Cart
+                        <Card
                             blur={true}
 
                         />
