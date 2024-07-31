@@ -81,6 +81,7 @@ li{
     color: rgba(255, 255, 255, 0.64);
     gap: 3px;
     padding: 12px;
+    cursor: pointer;
 }
 
 

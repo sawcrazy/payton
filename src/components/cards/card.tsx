@@ -4,7 +4,7 @@ import s from "./style.module.css";
 
 export const Card = (props)=>{
     return (
-        <div className={!props.blur ? `${s.choice__card}` : `${s.choice__card + ' ' + s.blur}`}>
+        <div className={s.choice__card}>
             <div className={s.choice__card_head}>
                 <div className={s.choice__card_head_logo}>
                     <img src={Icon_4} alt="icon"/>
@@ -30,7 +30,7 @@ export const Card = (props)=>{
                 {props.cardName}
             </div>
             <div className={s.choice__card_footer}>
-                <div>
+                <div className={s.choice__card_footer_price}>
                     <div className={s.choice__card_footer_name}>
                         Цена
                     </div>
@@ -38,7 +38,7 @@ export const Card = (props)=>{
                         500 USDT
                     </div>
                 </div>
-                <div>
+                <div className={s.choice__card_footer_duration}>
                     <div className={s.choice__card_footer_name}>
                         Длительность
                     </div>
@@ -46,7 +46,7 @@ export const Card = (props)=>{
                         6 мес.
                     </div>
                 </div>
-                <div>
+                <div className={s.choice__card_footer_begin}>
                     <div className={s.choice__card_footer_name}>
                         Начало
                     </div>

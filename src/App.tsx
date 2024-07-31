@@ -11,6 +11,7 @@ import {Switch} from "./components/switch/switch";
 import {ButtonShow} from "./components/buttons/button";
 import {useState} from "react";
 import {Card} from "./components/cards/card";
+import {CardBlur} from "./components/cards/card_blur";
 
 export const App = () =>{
     const [activeButton, setActiveButton] = useState('1');
@@ -68,20 +69,19 @@ export const App = () =>{
                     <div className={s.choice__content}>
                         <Card
                             img={Payton}
-                            cartName="Web3 Python-разработчик"
+                            cardName="Web3 Python-разработчик"
                         />
                         <Card
                             img={Js}
-                            cartName="Web3 JS-разработчик"
+                            cardName="Web3 JS-разработчик"
                         />
-                        <Card
-                            blur={true}
+                        <CardBlur
+                            cardName="Solidity"
+                        />
+                        <CardBlur
+                            cardName="Building"
+                        />
 
-                        />
-                        <Card
-                            blur={true}
-
-                        />
                     </div>
                 </section>
             </div>
