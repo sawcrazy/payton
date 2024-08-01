@@ -6,6 +6,7 @@
     padding: 16px;
 }
 .choice__card__blur{
+    position: relative;
     background: rgba(31, 32, 34, 1);
     backdrop-filter: blur(5px);
     width: 384px;
@@ -13,9 +14,6 @@
     border-radius: 16px;
     padding: 16px;
     filter: blur(2px);
-}
-.choice__card__blur .choice__text{
-    filter: blur(0);
 }
 
 .choice__card_head{
